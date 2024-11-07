@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>امتحان بسيط</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>امتحان تفاعلي</h1>
+        
+        <form id="quiz-form">
+            <!-- السؤال الأول -->
+            <div class="question">
+                <h3>1. ما نسبة الزيادة لي المرضع من فيتامين أ؟</h3>
+                <label><input type="radio" name="q1" value="wrong"> 1300ميكرو جرام </label>
+                <label><input type="radio" name="q1" value="correct"> 530 ميكروجرام</label>
+                <label><input type="radio" name="q1" value="wrong"> لا تحتاج</label>
+            </div>
+
+            <!-- السؤال الثاني -->
+            <div class="question">
+                <h3>2. ما الفيتامين الذي يقي من التشنجات العصية للرضيع؟</h3>
+                <label><input type="radio" name="q2" value="wrong"> B2</label>
+                <label><input type="radio" name="q2" value="correct">  B6 </label>
+                <label><input type="radio" name="q2" value="wrong">  ريبوفلافين</label>
+            </div>
+
+            <!-- السؤال الثالث -->
+            <div class="question">
+                <h3>3. يساعد فيتامين ....على منع الكساح للاطفال؟</h3>
+                <label><input type="radio" name="q3" value="correct"> فيتامين د</label>
+                <label><input type="radio" name="q3" value="wrong"> فيتامين ه</label>
+                <label><input type="radio" name="q3" value="wrong"> الكالسيوم</label>
+            </div>
+
+            <!-- السؤال الرابع -->
+            <div class="question">
+                <h3>4. يقل الاحتياج من الحديد للمرضع مقارنة بالحامل؟</h3>
+                <label><input type="radio" name="q4" value="wrong"> خطا</label>
+                <label><input type="radio" name="q4" value="correct"> صح</label>
+                <label><input type="radio" name="q4" value="wrong"> جميع ماسبق</label>
+            </div>
+
+            <!-- السؤال الخامس -->
+            <div class="question">
+                <h3>5. احتياجات الحامل والمرضع متساوية في فيتامين د ؟</h3>
+                <label><input type="radio" name="q5" value="correct"> صح</label>
+                <label><input type="radio" name="q5" value="wrong"> خطا</label>
+                <label><input type="radio" name="q5" value="wrong"> لاشيء مماسبق</label>
+            </div>
+
+            <button type="button" onclick="calculateScore()">إظهار النتيجة</button>
+        </form>
+
+        <div id="result" class="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
